@@ -6,16 +6,19 @@
     android:layout_height = "match_parent" >
 
     <LinearLayout
+        android:id="@+id/nextId"
         android:layout_width = "match_parent"
         android:layout_height = "150dp"
         android:background="#000"
         >
 
         <ImageView
+            android:id="@+id/itemImage"
             android:layout_width = "150dp"
             android:layout_height = "wrap_content"
             android:src="@drawable/img"
             android:padding="5dp"
+            android:scaleType="centerCrop"
             />
 
         <LinearLayout
@@ -23,12 +26,15 @@
             android:layout_height = "match_parent"
             android:orientation="vertical"
             android:gravity="center|left"
+            android:layout_marginLeft="7dp"
             >
 
             <TextView
+                android:id="@+id/itemCat"
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
-                android:text="TECH"
+                android:text="CAT"
+                android:textStyle="bold"
                 android:background="#FF0000"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -37,10 +43,10 @@
                 />
 
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/itemTitle"
                 android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
-                android:text="Helo Titlehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+                android:text="A stellar gaming experience: The ASUS ROG Zephyrus G14"
                 android:maxLines="2"
                 android:ellipsize="end"
                 android:textSize="20dp"
@@ -49,7 +55,7 @@
                 />
 
             <TextView
-                android:id="@+id/description"
+                android:id="@+id/itemDesc"
                 android:layout_width = "match_parent"
                 android:layout_height = "wrap_content"
                 android:text="Description"

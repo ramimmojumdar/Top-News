@@ -16,7 +16,8 @@
         android:textColor="#fff"
         android:gravity="center"
         android:textSize="25sp"
-        android:background="@drawable/three_color_curved"
+        android:background="#000000"
+        android:clickable="false"
         />
 
 
